@@ -5,17 +5,16 @@ from pages.googleSearch.GoogleFactory import GoogleFactory
 
 class TestGoogleSearch:
 
-    @pytest.mark.parametrize("language, browser, input_search",
-                             [
-                                 ("english", "chrome", "selenium webdriver"),
-                                 ("french", "chrome", "selenium webdriver"),
-                                 ("arabic", "chrome", "selenium webdriver"),
-                                 ("spanish", "chrome", "selenium webdriver"),
-                                 ("english", "firefox", "selenium webdriver"),
-                                 ("french", "firefox", "selenium webdriver"),
-                                 ("arabic", "firefox", "selenium webdriver"),
-                                 ("spanish", "firefox", "selenium webdriver")
-                             ])
+    @pytest.mark.parametrize("language, browser, input_search", [
+        ("english", "chrome", "selenium webdriver"),
+        ("french", "chrome", "selenium webdriver"),
+        ("arabic", "chrome", "selenium webdriver"),
+        ("spanish", "chrome", "selenium webdriver"),
+        ("english", "firefox", "selenium webdriver"),
+        ("french", "firefox", "selenium webdriver"),
+        ("arabic", "firefox", "selenium webdriver"),
+        ("spanish", "firefox", "selenium webdriver")
+    ])
     def test_google_search(self, language, browser, input_search):
 
         google_page = GoogleFactory.get_page(self, language=language, browser=browser)

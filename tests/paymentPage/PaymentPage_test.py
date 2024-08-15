@@ -8,15 +8,14 @@ from pages.paymentPage.components.PayPal import PayPal
 
 class TestPaymentPage:
 
-    @pytest.mark.parametrize("browser, firstname, lastname, email, payment_option, payment_details",
-                             [
-                                 ("chrome", "Tony", "Acosta", "tony@email", CreditCard, {'cc_num': '12341234', 'cc_year': '2030', 'cc_cvv': '333'}),
-                                 ("chrome", "Tony", "Acosta", "tony@email", NetBanking, {'bank': 'BOFA', 'account': '333333', 'pin': '1234'}),
-                                 ("chrome", "Tony", "Acosta", "tony@email", PayPal, {'paypal_username': 'username', 'paypal_password': 'password'}),
-                                 ("firefox", "Tony", "Acosta", "tony@email", CreditCard, {'cc_num': '12341234', 'cc_year':'2030', 'cc_cvv': '333'}),
-                                 ("firefox", "Tony", "Acosta", "tony@email", NetBanking, {'bank': 'BOFA', 'account': '333333', 'pin': '1234'}),
-                                 ("firefox", "Tony", "Acosta", "tony@email", PayPal, {'paypal_username': 'username', 'paypal_password': 'password'}),
-                             ])
+    @pytest.mark.parametrize("browser, firstname, lastname, email, payment_option, payment_details", [
+        ("chrome", "Tony", "Acosta", "tony@email", CreditCard, {'cc_num': '12341234', 'cc_year': '2030', 'cc_cvv': '333'}),
+        ("chrome", "Tony", "Acosta", "tony@email", NetBanking, {'bank': 'BOFA', 'account': '333333', 'pin': '1234'}),
+        ("chrome", "Tony", "Acosta", "tony@email", PayPal, {'paypal_username': 'username', 'paypal_password': 'password'}),
+        ("firefox", "Tony", "Acosta", "tony@email", CreditCard, {'cc_num': '12341234', 'cc_year':'2030', 'cc_cvv': '333'}),
+        ("firefox", "Tony", "Acosta", "tony@email", NetBanking, {'bank': 'BOFA', 'account': '333333', 'pin': '1234'}),
+        ("firefox", "Tony", "Acosta", "tony@email", PayPal, {'paypal_username': 'username', 'paypal_password': 'password'}),
+    ])
     def test_payment_option(self, browser, firstname, lastname, email, payment_option, payment_details):
 
         payment_page = PaymentPage(browser)

@@ -5,11 +5,10 @@ from pages.executeAroundPattern.Main import Main
 
 class TestExecuteAround:
 
-    @pytest.mark.parametrize("browser, first_name, last_name, address, text_area",
-                             [
-                                 ("chrome", "Tony", "Acosta", "Catarina", "Text_area"),
-                                 ("firefox", "Tony", "Acosta", "Catarina", "Text_area")
-                             ])
+    @pytest.mark.parametrize("browser, first_name, last_name, address, text_area", [
+        ("chrome", "Tony", "Acosta", "Catarina", "Text_area"),
+        ("firefox", "Tony", "Acosta", "Catarina", "Text_area")
+    ])
     def test_execute_around(self, browser, first_name, last_name, address, text_area):
         main = Main(browser)
         main.go_to_Main_page()
