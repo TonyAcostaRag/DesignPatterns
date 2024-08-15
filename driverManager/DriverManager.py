@@ -2,7 +2,6 @@ from selenium.webdriver.chrome.service import Service as chromeServ
 from selenium.webdriver.firefox.service import Service as ffServ
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support import expected_conditions as ec
-
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 

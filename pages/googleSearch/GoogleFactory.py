@@ -2,7 +2,6 @@ from pages.googleSearch.english.GoogleEnglishPage import GoogleEnglishPage
 from pages.googleSearch.french.GoogleFrenchPage import GoogleFrenchPage
 from pages.googleSearch.arabic.GoogleArabicPage import GoogleArabicPage
 from pages.googleSearch.spanish.GoogleSpanishPage import GoogleSpanishPage
-
 from pages.googleSearch.english.GoogleEnglishResultPage import GoogleEnglishResultPage
 from pages.googleSearch.french.GoogleFrenchResultPage import GoogleFrenchResultPage
 from pages.googleSearch.arabic.GoogleArabicResultPage import GoogleArabicResultPage

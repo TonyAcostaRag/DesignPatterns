@@ -1,5 +1,4 @@
 import time
-
 import pytest
 from pages.decorator.DashboardPage import DashboardPage
 from pages.decorator.Decorators import Decorators
@@ -16,7 +15,7 @@ class TestDecorator:
         ('firefox', "admin")
     ])
     def test_decorator(self, browser, role):
-        
+
         dashboardPage = DashboardPage(browser)
         dashboardPage.go_to_dashboard_page()
         dec = Decorators(dashboardPage)
