@@ -1,6 +1,5 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
-
 from driverManager.DriverManager import DriverManager
 
 
@@ -16,10 +15,13 @@ class DashboardPage(DriverManager):
 
     def go_to_dashboard_page(self):
         _url = "https://vins-udemy.s3.amazonaws.com/ds/decorator.html"
-        self.get_driver().get_url(_url)
+        self.get_url(_url)
 
-    def get_dropdown_role(self):
+    def _get_dropdown_role(self):
         return Select(self.get_driver().find_element(By.XPATH, self._dropdown_role))
+
+    def selectRole(self, value):
+        self._get_dropdown_role().select_by_value(value)
 
     def get_list_guest(self):
         return self.get_driver().find_elements(By.XPATH, self._list_guest)

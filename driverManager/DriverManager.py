@@ -10,10 +10,10 @@ from selenium.webdriver.support.wait import WebDriverWait
 class DriverManager:
 
     chromeService = chromeServ(
-        executable_path='/Users/antonioacostaflores/Documents/DevEnvironments/DesignPatterns/drivers/chromedriver')
+        executable_path='drivers/chromedriver')
 
     firefoxService = ffServ(
-        executable_path='/Users/antonioacostaflores/Documents/DevEnvironments/DesignPatterns/drivers/geckodriver')
+        executable_path='drivers/geckodriver')
 
     chromeDebug = Options()
     chromeDebug.add_experimental_option("debuggerAddress", "127.0.0.1:9222")
