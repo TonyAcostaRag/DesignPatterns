@@ -1,7 +1,7 @@
 import time
 import pytest
-from pages.decorator.DashboardPage import DashboardPage
-from pages.decorator.Decorators import Decorators
+from pages.decorator.dashboardPage.DashboardPage import DashboardPage
+from pages.decorator.dashboardPage.Decorators import Decorators
 
 
 class TestDecorator:
