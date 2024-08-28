@@ -1,11 +1,11 @@
-from pages.googleSearch.english.GoogleEnglishPage import GoogleEnglishPage
-from pages.googleSearch.french.GoogleFrenchPage import GoogleFrenchPage
-from pages.googleSearch.arabic.GoogleArabicPage import GoogleArabicPage
-from pages.googleSearch.spanish.GoogleSpanishPage import GoogleSpanishPage
-from pages.googleSearch.english.GoogleEnglishResultPage import GoogleEnglishResultPage
-from pages.googleSearch.french.GoogleFrenchResultPage import GoogleFrenchResultPage
-from pages.googleSearch.arabic.GoogleArabicResultPage import GoogleArabicResultPage
-from pages.googleSearch.spanish.GoogleSpanishResultPage import GoogleSpanishResultPage
+from pages.factory_googleSearch.english.GoogleEnglishPage import GoogleEnglishPage
+from pages.factory_googleSearch.french.GoogleFrenchPage import GoogleFrenchPage
+from pages.factory_googleSearch.arabic.GoogleArabicPage import GoogleArabicPage
+from pages.factory_googleSearch.spanish.GoogleSpanishPage import GoogleSpanishPage
+from pages.factory_googleSearch.english.GoogleEnglishResultPage import GoogleEnglishResultPage
+from pages.factory_googleSearch.french.GoogleFrenchResultPage import GoogleFrenchResultPage
+from pages.factory_googleSearch.arabic.GoogleArabicResultPage import GoogleArabicResultPage
+from pages.factory_googleSearch.spanish.GoogleSpanishResultPage import GoogleSpanishResultPage
 
 
 class GoogleFactory:

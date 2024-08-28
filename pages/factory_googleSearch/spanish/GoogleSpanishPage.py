@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-from pages.googleSearch.english.GoogleEnglishPage import GoogleEnglishPage
+from pages.factory_googleSearch.english.GoogleEnglishPage import GoogleEnglishPage
 
 
 class GoogleSpanishPage(GoogleEnglishPage):

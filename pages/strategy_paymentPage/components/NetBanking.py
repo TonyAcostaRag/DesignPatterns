@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
-from pages.paymentPage.components.PaymentOption import PaymentOption
+from pages.strategy_paymentPage.components.PaymentOption import PaymentOption
 
 
 class NetBanking(PaymentOption):

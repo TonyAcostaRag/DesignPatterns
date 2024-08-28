@@ -1,4 +1,4 @@
-from pages.paymentPage.components.PaymentOption import PaymentOption
+from pages.strategy_paymentPage.components.PaymentOption import PaymentOption
 from selenium.webdriver.common.by import By
 
 

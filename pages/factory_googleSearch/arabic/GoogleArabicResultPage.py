@@ -1,4 +1,4 @@
-from pages.googleSearch.english.GoogleEnglishResultPage import GoogleEnglishResultPage
+from pages.factory_googleSearch.english.GoogleEnglishResultPage import GoogleEnglishResultPage
 
 
 class GoogleArabicResultPage(GoogleEnglishResultPage):

@@ -1,9 +1,9 @@
 import time
 import pytest
-from pages.paymentPage.PaymentPage import PaymentPage
-from pages.paymentPage.components.CreditCard import CreditCard
-from pages.paymentPage.components.NetBanking import NetBanking
-from pages.paymentPage.components.PayPal import PayPal
+from pages.strategy_paymentPage.PaymentPage import PaymentPage
+from pages.strategy_paymentPage.components.CreditCard import CreditCard
+from pages.strategy_paymentPage.components.NetBanking import NetBanking
+from pages.strategy_paymentPage.components.PayPal import PayPal
 
 
 class TestPaymentPage:

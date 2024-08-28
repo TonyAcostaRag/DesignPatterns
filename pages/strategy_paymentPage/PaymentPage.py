@@ -1,6 +1,6 @@
-from pages.paymentPage.components.UserInformation import UserInformation
-from pages.paymentPage.components.Order import Order
-from pages.paymentPage.components.PaymentOption import PaymentOption
+from pages.strategy_paymentPage.components.UserInformation import UserInformation
+from pages.strategy_paymentPage.components.Order import Order
+from pages.strategy_paymentPage.components.PaymentOption import PaymentOption
 from driverManager.DriverManager import DriverManager
 
 

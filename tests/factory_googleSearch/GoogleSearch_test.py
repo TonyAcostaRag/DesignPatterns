@@ -1,6 +1,6 @@
 import time
 import pytest
-from pages.googleSearch.GoogleFactory import GoogleFactory
+from pages.factory_googleSearch.GoogleFactory import GoogleFactory
 
 
 class TestGoogleSearch:
