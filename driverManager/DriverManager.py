@@ -8,25 +8,24 @@ from selenium.webdriver.support.wait import WebDriverWait
 
 class DriverManager:
 
-    chromeService = chromeServ(
-        executable_path='drivers/chromedriver')
-
-    firefoxService = ffServ(
-        executable_path='drivers/geckodriver')
-
+    chromeService = chromeServ(executable_path='drivers/chromedriver')
+    firefoxService = ffServ(executable_path='drivers/geckodriver')
     chromeDebug = Options()
     chromeDebug.add_experimental_option("debuggerAddress", "127.0.0.1:9222")
 
+    def _get_browser(self, browser):
+
+        browser_dict = {
+            'chrome': [webdriver.Chrome, self.chromeService],
+            'firefox': [webdriver.Firefox, self.firefoxService]
+        }
+        return browser_dict[browser][0](service=browser_dict[browser][1])
+
     def __init__(self, browser, driver=None):
         if driver is None:
-            if browser == 'firefox':
-                self.__driver = webdriver.Firefox(service=self.firefoxService)
-            elif browser == 'chrome':
-                self.__driver = webdriver.Chrome(service=self.chromeService)
-
+            self.__driver = self._get_browser(browser)
             self.__driver.maximize_window()
             self.__driver.implicitly_wait(10)
-
         else:
             self.__driver = driver
 
