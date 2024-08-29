@@ -1,6 +1,6 @@
-Every class should have been implemented under the Single Responsibility Principle.
+## Every class should have been implemented under the Single Responsibility Principle.
 
-Different design patterns are displayed on different key classes within the project.
+## Different design patterns are displayed on different key classes within the project.
 
 Factory design pattern, implemented on /pages/factory_googleSearch/GoogleFactory.py
 
