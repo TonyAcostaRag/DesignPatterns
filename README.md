@@ -3,6 +3,7 @@ Every class should have been implemented under the Single Responsibility Princip
 Different design patterns are displayed on different key classes within the project.
 
 Factory design pattern, implemented on /pages/factory_googleSearch/GoogleFactory.py
+
 *Instantiates a google page depending on the language given.*
 
 Strategy design pattern, implemented on /pages/strategy_paymentPage/components/PaymentOption.py
