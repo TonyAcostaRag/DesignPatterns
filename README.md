@@ -1,6 +1,7 @@
-## Every class should have been implemented under the Single Responsibility Principle.
+## The purpose of this project is to serve as a guide to implement the design patterns on a test project.
 
 ## Different design patterns are displayed on different key classes within the project.
+Every class should have been implemented under the Single Responsibility Principle
 
 Factory design pattern, implemented on /pages/factory_googleSearch/GoogleFactory.py
 
